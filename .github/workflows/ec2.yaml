@@ -9,3 +9,9 @@ jobs:
 
       - name: display files 
         run: ls -la
+
+      - name: setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: init 
+        run: terraform init 
