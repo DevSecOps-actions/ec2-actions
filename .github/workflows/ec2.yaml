@@ -1,0 +1,11 @@
+name: Launch EC2
+on: [push]
+jobs:
+  Checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: display files 
+        run: ls -la
