@@ -10,7 +10,7 @@ resource "aws_instance" "instance" {
 }
 
 resource "aws_security_group" "allow-all" {
-  name   = "allow-all"
+  name   = "actions-sg"
 
   egress {
     from_port        = 0
